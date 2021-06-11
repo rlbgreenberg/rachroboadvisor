@@ -1,5 +1,16 @@
 # this is the "app/robo_advisor.py" file
 
+import os
+from dotenv import load_dotenv
+
+import requests
+
+load_dotenv()
+
+# read env variables
+ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+
+
 print("-------------------------")
 print("SELECTED SYMBOL: XYZ")
 print("-------------------------")
@@ -16,3 +27,12 @@ print("RECOMMENDATION REASON: TODO")
 print("-------------------------")
 print("HAPPY INVESTING!")
 print("-------------------------")
+
+
+
+symbol = "MSFT"
+request_url = 
+
+response = requests.get(reques_url)
+print(type(response))
+print(response.text)

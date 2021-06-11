@@ -3,6 +3,19 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# this is the ".gitignore" file
+
+# ignore secret environment variable values in the ".env" file:
+.env
+
+# this is the "data/.gitignore" file
+
+# ignore all files in this "data" directory:
+*
+
+# except this ".gitignore" file:
+!.gitignore
+
 # C extensions
 *.so
 
