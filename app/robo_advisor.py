@@ -2,13 +2,14 @@
 
 import os
 from dotenv import load_dotenv
-
 import requests
-
-load_dotenv()
-
+load_dotenv() # go get env vars from the .env file
+# adds the env vars to the surrounding environment 
+# ... where can access them with the os module
 # read env variables
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+print(ALPHAVANTAGE_API_KEY)
+exit()
 
 
 print("-------------------------")
